@@ -5,9 +5,7 @@
 require('dotenv').config();
 // pull PORT from .env, give default value of 3000
 // pull MONGODB_URL from .env
-const DATABASE_URL =
-	'mongodb+srv://garoy:cKAY7dGwOm4J8bD2@foodapp2.dizply4.mongodb.net/?retryWrites=true&w=majority';
-const PORT = 8888;
+const { PORT, DATABASE_URL } = process.env;
 // import express
 const express = require('express');
 // create application object
